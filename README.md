@@ -1,6 +1,6 @@
 # blog
 
-> My gnarly Nuxt.js project
+> Blog project with Nuxtjs
 
 ## Build Setup
 
