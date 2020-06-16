@@ -1,6 +1,6 @@
 <template>
   <div class="admin-new-post-page">
-    <section class="new-post-form">
+    <section class="update-form">
       <AdminPostForm :post="loadedPost" />
     </section>
   </div>
@@ -9,6 +9,7 @@
 <script>
 import AdminPostForm from "~/components/Admin/AdminPostForm";
 export default {
+  layout: "admin",
   components: {
     AdminPostForm
   },
@@ -25,3 +26,14 @@ export default {
   }
 };
 </script>
+<style scoped>
+.update-form {
+  width: 90%;
+  margin: 20px auto;
+}
+@media (min-width: 768px) {
+  .update-form {
+    width: 500px;
+  }
+}
+</style>
